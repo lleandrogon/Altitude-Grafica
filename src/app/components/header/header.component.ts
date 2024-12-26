@@ -9,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  navResponsivo: boolean = true;
+  navResponsivo: boolean = false;
+
+  showNav(): void {
+    if (this.navResponsivo == true) {
+      this.navResponsivo = false;
+    } else {
+      this.navResponsivo = true;
+    }
+  } 
 }

@@ -1,22 +1,28 @@
-<header class="container-fluid row d-md-flex align-items-center py-2">
-    <div class="logo-container col-md-6 justify-content-start">
-        <img src="../../../assets/Logo-Simplificada.jpeg" alt="Logo" class="logo img img-fluid">
+<header class="cabecalho container-fluid">
+    <div class="row d-md-flex align-items-center py-3">
+        <div class="logo-container col-6 d-flex justify-content-start align-items-center">
+            <img src="../../../assets/Logo-Simplificada-removebg-preview.png" alt="Logo" class="logo img img-fluid">
+            <p class="nome-grafica ms-3 mt-3">Altitude Gráfica</p>
+        </div>
+        <div class="col-6 d-flex d-md-none justify-content-end p-0">
+            <i class="fa-solid fa-bars" (click)="showNav()"></i>
+        </div>
+        <nav class="col-6 d-none d-md-flex justify-content-end align-items-center">
+            <ul class="redirecionamento d-md-flex">
+                <li class="sem-marcadores linha-space"><a href="" class="link-nav sem-sublinhado">Home</a></li>
+                <li class="sem-marcadores linha-space"><a href="" class="link-nav sem-sublinhado">Sobre</a></li>
+                <li class="sem-marcadores linha-space"><a href="" class="link-nav sem-sublinhado">Link</a></li>
+                <li class="sem-marcadores linha-space"><a href="" class="link-nav sem-sublinhado">Link</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="col-6 d-md-flex d-none justify-content-end text-center pt-4 pt-md-0">
-        <ul class="redirecionamento d-md-flex">
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Home</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-        </ul>
-    </nav>
-    <nav *ngIf="navResponsivo" class=" mt-4">
-        <i class="fa-solid fa-bars"></i>
-        <ul class="redirecionamento-responsivo text-center">
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Home</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
-        </ul>
-    </nav>
 </header>
+
+<nav *ngIf="navResponsivo" class="nav-responsivo text-center d-md-none">
+    <ul class="redirecionamento-responsivo">
+        <li class="sem-marcadores"><a href="" class="link-nav sem-sublinhado">Home</a></li>
+        <li class="sem-marcadores"><a href="" class="link-nav sem-sublinhado">Sobre</a></li>
+        <li class="sem-marcadores"><a href="" class="link-nav sem-sublinhado">Link</a></li>
+        <li class="sem-marcadores"><a href="" class="link-nav sem-sublinhado">Link</a></li>
+    </ul>
+</nav>

@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --vermelho: #DC181E;
+    --semi-escuro: #16161A;
+    --sombreamento-vermelho: #dc181f80; 
+}
+
 .sem-marcadores {
     list-style-type: none;
 }
@@ -7,4 +13,66 @@
 .sem-sublinhado {
     text-decoration: none;
     color: black;
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: var(--vermelho);
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    border: none;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+
+.botao:hover {
+    background-color: white;
+    color: var(--vermelho);
+    box-shadow: 0 8px 20px var(--sombreamento-vermelho);
+    transform: scale(1.05);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    height: 3px;
+    background-color: var(--vermelho);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.subtitulo::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    height: 3px;
+    background-color: var(--vermelho);
+    margin-left: auto;
+    margin-right: auto;
 }
