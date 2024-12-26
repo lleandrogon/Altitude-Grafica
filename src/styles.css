@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.sem-marcadores {
+    list-style-type: none;
+}
+
+.sem-sublinhado {
+    text-decoration: none;
+    color: black;
+}

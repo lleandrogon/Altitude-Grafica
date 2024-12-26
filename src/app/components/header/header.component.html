@@ -1,0 +1,22 @@
+<header class="container-fluid row d-md-flex align-items-center py-2">
+    <div class="logo-container col-md-6 justify-content-start">
+        <img src="../../../assets/Logo-Simplificada.jpeg" alt="Logo" class="logo img img-fluid">
+    </div>
+    <nav class="col-6 d-md-flex d-none justify-content-end text-center pt-4 pt-md-0">
+        <ul class="redirecionamento d-md-flex">
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Home</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+        </ul>
+    </nav>
+    <nav *ngIf="navResponsivo" class=" mt-4">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="redirecionamento-responsivo text-center">
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Home</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+            <li class="sem-marcadores"><a href="" class="sem-sublinhado">Link</a></li>
+        </ul>
+    </nav>
+</header>

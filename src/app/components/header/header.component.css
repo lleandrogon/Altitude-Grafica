@@ -1,0 +1,17 @@
+.logo {
+    width: 90px;
+}
+
+.redirecionamento li {
+    padding: 0 20px;
+}
+
+.redirecionamento-responsivo li {
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .logo-container {
+        margin-left: 0;
+    }
+}
