@@ -1,0 +1,37 @@
+* {
+    color: white;
+}
+
+.servicos {
+    background: var(--semi-escuro)
+    /* background: url("https://i.pinimg.com/736x/31/ae/54/31ae54f0dac0fdaa8a55fb7078285f53.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
+}
+
+.card {
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px var(--sombreamento-vermelho);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.card-text {
+    color: #b4b4b4;
+}

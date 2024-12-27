@@ -1,0 +1,16 @@
+<section class="estatisticas container-fluid py-4">
+    <div class="row d-flex justify-content-center px-3">
+        @for (item of estatisticas; track item.descricao) {
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <i [class]="item.icon" class="icone-estatistica"></i>
+            </div>
+            <div class="estatisticas-container ms-4">
+                <span class="mais-de">+ de</span> <br>
+                <span class="quantidade">{{ item.quantidade }}</span> <br>
+                <span class="descricao">{{ item.descricao }}</span>
+            </div>
+        </div>
+        }
+    </div>
+</section>

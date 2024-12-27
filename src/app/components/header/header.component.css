@@ -7,20 +7,19 @@
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
 }
 
 .nome-grafica {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1.1px;
 }
 
 .fa-bars {
-    font-size: 3.5em;
+    font-size: 3em;
     cursor: pointer;
-    color: #333;
     transition: transform 0.3s ease;
 }
 
@@ -35,11 +34,15 @@
 
 .link-nav {
     transition: color 0.3s ease;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .link-nav:hover {
     color: var(--vermelho);
+}
+
+.nav-responsivo {
+    background-color: var(--semi-escuro);
 }
 
 .redirecionamento-responsivo {

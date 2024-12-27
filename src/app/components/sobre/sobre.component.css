@@ -6,12 +6,17 @@
     background: var(--semi-escuro);
 }
 
-.logo {
-    width: 400px;
+.conteudo-container {
+    margin-top: 50px;
 }
 
-.conteudo-container {
-    margin-top: 100px;
+.logo {
+    width: 400px;
+    animation: animacaoImagem 2s infinite;
+}
+
+.texto-container {
+    margin-top: 30px;
 }
 
 .texto {
@@ -20,7 +25,30 @@
 }
 
 @media (min-width: 768px) {
+    .conteudo-container {
+        margin-top: 100px;
+    }
+
     .logo {
-        width: 700px;
+        width: 650px;
+    }
+
+    .texto-container {
+        margin-top: 0;
+    }
+}
+
+@keyframes animacaoImagem {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }

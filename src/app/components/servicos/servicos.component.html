@@ -1,0 +1,14 @@
+<section class="servicos container-fluid py-5">
+    <h1 class="titulo mt-5">Serviços</h1>
+    <div class="row d-flex justify-content-center mt-5">
+        @for (item of servicos; track item.nome) {
+        <div class="card col-md-3 my-2 mx-3 px-0" style="width: 22rem;">
+            <img [src]=item.imagem class="card-img-top" alt="Foto do Produto">
+            <div class="card-body">
+                <h4 class="card-title mt-3">{{ item.nome }}</h4>
+                <p class="card-text mt-3">{{ item.descricao }}</p>
+            </div>
+        </div>
+        }
+    </div>
+</section>
