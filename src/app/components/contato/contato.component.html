@@ -1,0 +1,45 @@
+<section class="contato container-fluid py-5">
+    <form [formGroup]="contatoForm" class="contato-form">
+    <h1 class="titulo">CONTATO</h1>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" autocomplete="off" id="nome" formControlName="nome">
+            @if (contatoForm.controls['nome'].touched && contatoForm.controls['nome'].errors?.['required']) {
+                <p class="alerta">O campo nome é obrigatório!</p>
+            } @else if (contatoForm.controls['nome'].touched && contatoForm.controls['nome'].errors?.['minlength']) {
+                <p class="alerta">Nome deve ter pelo menos 3 caracteres</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" autocomplete="off" id="email" formControlName="email">
+            @if (contatoForm.controls['email'].touched && contatoForm.controls['email'].errors?.['required']) {
+                <p class="alerta">O campo email é obrigatório!</p>
+            } @else if (contatoForm.controls['email'].touched && contatoForm.controls['email'].errors?.['email']) {
+                <p class="alerta">Email inválido!</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" autocomplete="off" id="telefone" formControlName="telefone" (input)="formatarTelefone($event)">
+            @if (contatoForm.controls['telefone'].touched && contatoForm.controls['telefone'].errors?.['required']) {
+                <p class="alerta">O campo telefone é obrigatório!</p>
+            } @else if (contatoForm.controls['telefone'].touched && contatoForm.controls['telefone'].errors?.['pattern']) {
+                <p class="alerta">Telefone inválido!</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea id="mensagem" class="form-control mensagem" formControlName="mensagem"></textarea>
+            @if (contatoForm.controls['mensagem'].touched && contatoForm.controls['mensagem'].errors?.['required']) {
+                <p class="alerta">Escreva sua mensagem!</p>
+            } @else if (contatoForm.controls['mensagem'].touched && contatoForm.controls['mensagem'].errors?.['minlength']) {
+                <p class="alerta">Mensagem deve ter no mínimo 3 caracteres!</p>
+            }
+        </div>
+        <div class="botoes d-flex justify-content-end mt-5">
+            <button class="botao mx-2" (click)="limparFormulario()">Limpar</button>
+            <button class="botao mx-2" (click)="enviarWhatsapp()" [disabled]="!contatoForm.valid">Enviar</button>
+        </div>
+    </form>
+</section>

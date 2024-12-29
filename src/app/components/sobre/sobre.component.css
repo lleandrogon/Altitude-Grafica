@@ -4,6 +4,8 @@
 
 .sobre {
     background: var(--semi-escuro);
+    border-top: 3px solid var(--vermelho);
+    border-bottom: 3px solid var(--vermelho);
 }
 
 .conteudo-container {

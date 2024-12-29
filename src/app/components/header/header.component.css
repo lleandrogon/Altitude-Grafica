@@ -25,6 +25,7 @@
 
 .fa-bars:hover {
     transform: rotate(90deg);
+    color: var(--vermelho);
 }
 
 .linha-space {
