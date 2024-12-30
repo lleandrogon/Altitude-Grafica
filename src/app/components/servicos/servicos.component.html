@@ -1,8 +1,8 @@
-<section class="servicos container-fluid py-3">
+<section class="servicos container-fluid py-5">
     <h1 class="titulo mt-5">Serviços</h1>
-    <div class="row d-flex justify-content-center mt-5">
+    <div class="row d-flex justify-content-center mt-5 mx-2">
         @for (item of servicos; track item.nome) {
-        <div class="card col-md-3 my-2 mx-3 px-0" style="width: 22rem;">
+        <div class="card col-md-3 my-3 mx-4 px-0" style="width: 28rem;">
             <img [src]=item.imagem class="card-img-top" alt="Foto do Produto">
             <div class="card-body">
                 <h4 class="card-title mt-3">{{ item.nome }}</h4>

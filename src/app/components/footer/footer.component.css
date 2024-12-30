@@ -1,0 +1,41 @@
+* {
+    color: white;
+}
+
+.rodape {
+    background-color: var(--semi-escuro);
+}
+
+.pagamento-icon {
+    color: var(--vermelho);
+    font-size: 40px;
+    margin: 0 60px;
+}
+
+.contato {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contato:hover {
+    color: var(--vermelho);
+}
+
+.contato-icon {
+    color: var(--vermelho);
+    font-size: 1.3em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.copyright {
+    background-color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.leandro:hover {
+    color: var(--vermelho);
+}

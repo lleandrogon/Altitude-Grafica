@@ -23,7 +23,7 @@ export class EstatisticasComponent {
     {
       icon: "fa-solid fa-briefcase",
       quantidade: "10 anos",
-      descricao: "ambiente profissional"
+      descricao: "de atuação no mercado"
     },
     {
       icon: "fa-regular fa-circle-check",

@@ -1,0 +1,25 @@
+<footer class="rodape container-fluid pt-5">
+    <h2 class="text-center subtitulo">Formas de Pagamento</h2>
+    <div class="pagamento-container d-flex justify-content-center mt-4 py-2">
+        @for (item of pagamentos; track item.forma) {
+            <i class="{{item.icon}} pagamento-icon"></i>
+        }
+    </div>
+    <div class="contatos row d-flex mt-5">
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+            <h2 class="mb-4">Contatos</h2>
+            @for (item of contatos; track item.tipo) {
+                <p class="contato my-3"><i class="{{item.icon}} contato-icon me-2"></i>{{item.descricao}}</p>
+            }
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center my-4 my-md-0">
+            <h2 class="mb-4">Redes Sociais</h2>
+            @for (item of redesSociais; track item.tipo) {
+                <a [href]="item.link" target="_blank" class="link contato"><p class="contato my-3"><i class="{{item.icon}} contato-icon me-2"></i>{{item.descricao}}</p></a>
+            }
+        </div>
+    </div>
+</footer>
+<div class="copyright container-fluid text-center py-2">
+    &copy; {{currentYear}} Altitude Gráfica. Todos os direitos reservados. Desenvolvido por <a [href]="linkedinLeandro" target="_blank" class="text-decoration-none"><span class="leandro">Leandro Gonçalves Crisóstomo</span></a>.
+</div>

@@ -22,6 +22,7 @@
 
 .form-label {
     color: var(--vermelho);
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -52,20 +53,20 @@
     padding: 7px 15px;
 }
 
-@media (min-width: 768px) {
-    .contato-form {
-        margin: 0 80px;
-    }
-}
-
-@media (min-width: 992px) {
-    .contato-form {
-        margin: 0 280px;
-    }
-}
-
 @media (min-width: 1200px) {
     .contato-form {
-        margin: 0 380px;
+        margin: 0 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contato-form {
+        margin: 0 450px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contato-form {
+        margin: 0 600px;
     }
 }

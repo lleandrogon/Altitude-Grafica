@@ -1,0 +1,15 @@
+* {
+    color: white;
+}
+
+.localizacao {
+    background-color: black;
+}
+
+.iframe-container {
+    border-radius: 30px;
+}
+
+iframe {
+    border-radius: 30px;
+}
