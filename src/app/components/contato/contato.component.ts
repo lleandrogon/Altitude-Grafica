@@ -38,17 +38,21 @@ export class ContatoComponent {
     this.contatoForm.reset();
   }
 
-  enviarWhatsapp() {
+  enviarEmail() {
     const nome = this.contatoForm.value.nome;
     const email = this.contatoForm.value.email;
     const telefone = this.contatoForm.value.telefone;
     const mensagem = this.contatoForm.value.mensagem;
 
-    const numero = "5582988103004";
+    const emailLink = `mailto:lleandrogon2004@gmail.com?subject=Contato pelo Site&body=Nome: ${nome}%0AEmail: ${email}%0ATelefone: ${telefone} %0AMensagem: ${mensagem}`;
+
+    window.open(emailLink, "_blank");
+
+    /* const numero = "5582988103004";
     const mensagemWhatsapp = `Nome: ${nome}\nEmail: ${email}\n Telefone: ${telefone}\n\nMensagem: ${mensagem}`;
     const codificacao = encodeURIComponent(mensagemWhatsapp);
     const link = `https://wa.me/${numero}?text=${codificacao}`;
 
-    window.open(link, '_blank');
+    window.open(link, '_blank'); */
   }
 }

@@ -4,6 +4,8 @@
 
 .cabecalho {
     background-color: var(--semi-escuro);
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo {
