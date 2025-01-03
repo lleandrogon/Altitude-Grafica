@@ -42,7 +42,7 @@ export class FooterComponent {
     {
       tipo: "email",
       icon: "fa-solid fa-envelope",
-      descricao: "lorem@gmail.com"
+      descricao: "atitudegraficamcz@gmail.com"
     }
   ]
 

@@ -11,11 +11,6 @@ import { Servico } from '../../models/servico';
 export class ServicosComponent {
   servicos: Servico[] = [
     {
-      imagem: "../../../assets/wind-banner.jfif",
-      nome: "Wind Banner",
-      descricao: "Wind Banner é uma excelente solução para publicidade ao ar livre. Ideal para promover sua marca de maneira impactante em eventos ou em locais com grande movimentação de pessoas."
-    },
-    {
       imagem: "../../../assets/cartao-de-visita.jfif",
       nome: "Cartão de Visita",
       descricao: "Cartões de visita personalizados para deixar uma primeira impressão marcante. Ótimo para quem busca destacar sua imagem profissional com qualidade e estilo."
@@ -31,14 +26,19 @@ export class ServicosComponent {
       descricao: "A adesivação de veículos transforma carros e frotas em poderosos meios de comunicação móvel. Perfeita para divulgar sua empresa em movimento."
     },
     {
+      imagem: "../../../assets/adesivo-jateado.jpg",
+      nome: "Adesivos Jateados",
+      descricao: "Adesivos jateados para dar um toque elegante e moderno a vidros e superfícies. Ideal para ambientes corporativos e comerciais que buscam privacidade e sofisticação."
+    },
+    {
       imagem: "../../../assets/banners.jfif",
       nome: "Banners",
       descricao: "Banners de alta qualidade para eventos, promoções ou decoração. A melhor opção para quem deseja visibilidade em grande escala e impacto visual."
     },
     {
-      imagem: "../../../assets/adesivo-jateado.jfif",
-      nome: "Adesivos Jateados",
-      descricao: "Adesivos jateados para dar um toque elegante e moderno a vidros e superfícies. Ideal para ambientes corporativos e comerciais que buscam privacidade e sofisticação."
+      imagem: "../../../assets/wind-banner.jfif",
+      nome: "Wind Banner",
+      descricao: "Wind Banner é uma excelente solução para publicidade ao ar livre. Ideal para promover sua marca de maneira impactante em eventos ou em locais com grande movimentação de pessoas."
     },
     {
       imagem: "../../../assets/painel-metalico.jfif",
@@ -57,7 +57,7 @@ export class ServicosComponent {
     },
     {
       imagem: "../../../assets/quadro-gestao.jfif",
-      nome: "Quadros de Gestão",
+      nome: "Quadro de Gestão",
       descricao: "Quadros de gestão para facilitar a organização e visualização de informações. Perfeito para ambientes corporativos e empresas que buscam otimizar seus processos internos."
     },
     {
