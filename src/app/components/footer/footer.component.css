@@ -8,7 +8,7 @@
 
 .pagamento-icon {
     color: var(--vermelho);
-    font-size: 40px;
+    font-size: 30px;
     margin: 0 60px;
 }
 
@@ -38,4 +38,10 @@
 
 .leandro:hover {
     color: var(--vermelho);
+}
+
+@media (min-width: 768px) {
+    .pagamento-icon {
+        font-size: 50px;
+    }
 }
